@@ -1,0 +1,8 @@
+codepath.demos.helloworlddemo.app-pngs-0 C:\jesse\jli43\AndroidStudioProjects\CS_388_Projects\android_hello_world\app\build\generated\res\pngs\debug
+codepath.demos.helloworlddemo.app-resValues-1 C:\jesse\jli43\AndroidStudioProjects\CS_388_Projects\android_hello_world\app\build\generated\res\resValues\debug
+codepath.demos.helloworlddemo.app-rs-2 C:\jesse\jli43\AndroidStudioProjects\CS_388_Projects\android_hello_world\app\build\generated\res\rs\debug
+codepath.demos.helloworlddemo.app-mergeDebugResources-3 C:\jesse\jli43\AndroidStudioProjects\CS_388_Projects\android_hello_world\app\build\intermediates\incremental\debug\mergeDebugResources\merged.dir
+codepath.demos.helloworlddemo.app-mergeDebugResources-4 C:\jesse\jli43\AndroidStudioProjects\CS_388_Projects\android_hello_world\app\build\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+codepath.demos.helloworlddemo.app-merged_res-5 C:\jesse\jli43\AndroidStudioProjects\CS_388_Projects\android_hello_world\app\build\intermediates\merged_res\debug
+codepath.demos.helloworlddemo.app-debug-6 C:\jesse\jli43\AndroidStudioProjects\CS_388_Projects\android_hello_world\app\src\debug\res
+codepath.demos.helloworlddemo.app-main-7 C:\jesse\jli43\AndroidStudioProjects\CS_388_Projects\android_hello_world\app\src\main\res
