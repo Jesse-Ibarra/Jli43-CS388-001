@@ -16,16 +16,15 @@ The following **required** functionality is completed:
 - [ ] **After all guesses are taken, user can see the target word displayed**
 
 The following **optional** features are implemented:
-- [ ] Duplicate letters in word are kept track of
-- [ ] User sees a visual change after guessing the correct word (confetti)
-- [ ] Once correct word is guessed or failure to guess right word, keyboard is automatically hidden
+- [ ] User sees a visual change after guessing the correct word (confetti)  
 - [ ] User can tap a 'Reset' button to get a new word and clear previous guesses
 - [ ] User will get an error message if they input an invalid guess
 - [ ] User can see a 'streak' record of how many words they've guessed correctly.
-- [ ] Toast messages for invalid word, right/wrong word guessed, game reset
 
 The following **additional** features are implemented:
-
+- [ ] Toast messages for invalid word, right/wrong word guessed, game reset
+- [ ] Duplicate letters in word are kept track of
+- - [ ] Once correct word is guessed or failure to guess right word, keyboard is automatically hidden
 * [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
