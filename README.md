@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lab 1: Tap Counter App
 
 Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/1#!labs)
@@ -68,3 +69,5 @@ difficult part for me was figuring how to get the texts over buttons but I event
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+=======
+>>>>>>> main
