@@ -19,19 +19,19 @@ The following **required** functionality is completed:
         - Sender
         - Email title
         - Email summary
-    - <img src='./assets/requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+    - <img src='app/src/main/res/assets/requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
 ### Stretch Features
 
 The following **stretch** functionality is implemented:
 
 - [ ] (3 pts) **User can press a 'Load More' button to see the next 5 emails displayed.**
-    - <img src='./assets/requirement_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+    - <img src='app/src/main/res/assets/requirement_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
 
 - [ ] (3 pts) **Each email displays additional information:**
     - Picture of the sender
     - Email sent date
     - Bolded information if the email is unread
-    - <img src='./assets/requirement_3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+    - <img src='app/src/main/res/assets/requirement_3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
@@ -43,6 +43,9 @@ Describe any challenges encountered while building the app. <!-- Replace this wi
 - [Using the RecyclerView](https://guides.codepath.com/android/using-the-recyclerview)
 
 ## License
+- GIF created with [CloudConvert](https://cloudconvert.com/)
+- [Create dynamic lists with RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview)
+- [Using the RecyclerView](https://guides.codepath.com/android/using-the-recyclerview)
 
 ```plaintext
     Copyright [2024] [Jesse Ibarra]
