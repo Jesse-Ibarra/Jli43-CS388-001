@@ -1,4 +1,4 @@
-# Android Project 2 - *Name of App Here*
+# Android Project 2: Wishlist
 
 Submitted by: **Jesse Ibarra**
 
@@ -23,7 +23,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-< <img src='./assets/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./assets/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with ...
 - GIF created with [CloudConvert](https://cloudconvert.com/)
