@@ -16,6 +16,7 @@ The following **required** functionality is completed:
 
 - [X] (2 pts) **Live data is loaded from the NY Times API.**
     - <img src='Assets/Requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+    - <img src='Assets/Screenshot%202024-10-05%20115210.png' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 - [X] (4 pts) **Books are displayed using a RecyclerView.**
     - Displays book ranking, cover, title, author, and description.
     - Book cover images are downloaded using Glide.
