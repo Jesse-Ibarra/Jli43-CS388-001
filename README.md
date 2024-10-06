@@ -36,7 +36,8 @@ GIF created with ...
 
 ## Notes
 
-I had some issues with implementing the JSON
+I had some issues with implementing the JSON when I was trying to cast the results field and I was mistakingly treating it as an oobject instead of an array.
+This led to several crashes but I eventually figured out the problem and implemented the JSONArray correctly.
 
 ## License
 
