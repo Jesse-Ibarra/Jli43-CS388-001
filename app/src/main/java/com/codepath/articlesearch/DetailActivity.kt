@@ -9,21 +9,28 @@ import com.bumptech.glide.Glide
 private const val TAG = "DetailActivity"
 
 class DetailActivity : AppCompatActivity() {
-    private lateinit var mediaImageView: ImageView
-    private lateinit var titleTextView: TextView
-    private lateinit var bylineTextView: TextView
-    private lateinit var abstractTextView: TextView
+    private lateinit var mediaImage: ImageView
+    private lateinit var titleText: TextView
+    private lateinit var bylineText: TextView
+    private lateinit var abstractText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        // TODO: Find the views for the screen
+        mediaImage = findViewById(R.id.Image)
+        titleText = findViewById(R.id.Title)
+        bylineText = findViewById(R.id.medialine)
+        abstractText = findViewById(R.id.mediaAbstract)
 
-        // TODO: Get the extra from the Intent
+        val article = intent.getSerializableExtra(ARTICLE_EXTRA) as Article
 
-        // TODO: Set the title, byline, and abstract information from the article
+        titleText.text = article.headline?.main
+        bylineText.text = article.byline?.original
+        abstractText.text = article.abstract
 
-        // TODO: Load the media image
+        Glide.with(this)
+            .load(article.mediaImageUrl)
+            .into(mediaImage)
     }
 }

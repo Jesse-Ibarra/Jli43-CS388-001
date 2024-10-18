@@ -1,50 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/detailLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".DetailActivity">
 
     <ImageView
-        android:id="@+id/mediaImage"
+        android:id="@+id/Image"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        app:layout_constraintHeight_min="150dp"
+        tools:srcCompat="@drawable/sample_image" />
 
     <TextView
-        android:id="@+id/mediaTitle"
+        android:id="@+id/Title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="Title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="#FF7043"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mediaImage" />
+        app:layout_constraintTop_toBottomOf="@+id/Image" />
 
     <TextView
-        android:id="@+id/mediaByline"
+        android:id="@+id/medialine"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="Byline"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        android:textColor="#FF7043"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mediaTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
 
     <TextView
         android:id="@+id/mediaAbstract"
@@ -53,11 +55,9 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
-        android:text="Abstract"
-        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
-        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="#FF7043"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mediaByline" />
-
+        app:layout_constraintTop_toBottomOf="@+id/medialine" />
 </androidx.constraintlayout.widget.ConstraintLayout>
