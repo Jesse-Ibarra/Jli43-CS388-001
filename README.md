@@ -27,7 +27,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='app/src/main/res/assets/requirment_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
+<img src='app/src/main/res/assets/Requirment_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
 
 GIF created with ...
 - GIF created with [CloudConvert](https://cloudconvert.com/)
