@@ -1,42 +1,41 @@
-# Android Project 3 - *Flxster*
+# Android Project 4 - *Entertainment Here*
 
 Submitted by: **Jesse Ibarra**
 
-**Flixster** is a movie browsing app that allows users to browse movies currently playing in theaters.
+**Entertainment Here** is a movie browsing app that allows users to browse some popular TV shows and
+Movies and gives them a short description of what the show or movie is about.
 
-Time spent: **10** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [X] **Make a request to [The Movie Database API's `now_playing`](https://developers.themoviedb.org/3/movies/get-now-playing) endpoint to get a list of current movies**
-- [X] **Parse through JSON data and implement a RecyclerView to display all movies**
-- [X] **Use Glide to load and display movie poster images**
+- [X] **Choose any endpoint on The MovieDB API except `now_playing`**
+    - Chosen Endpoint: '/tv/popular' and '/movie/popular'
+- [X] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
+- [X] **Use Glide to load and display at least one image per entry**
+- [X] **Click on an entry to view specific details about that entry using Intents**
 
 The following **optional** features are implemented:
 
-- [X] Improve and customize the user interface through styling and coloring
-- [X] Implement orientation responsivity
-    - App should neatly arrange data in both landscape and portrait mode
-- [X] Implement Glide to display placeholder graphics during loading
-    - Note: this feature is difficult to capture in a GIF without throttling internet speeds.  
-      Instead, include an additional screencap of your Glide code implementing the feature.  (<10 lines of code)
-    - <img src='./assets/Glide_stretch_feature.png' title='Screencap' width='' alt='Video Walkthrough' />
+- [X] **Add another API call and RecyclerView that lets the user interact with different data.**
+- [ ] **Add rounded corners to the images using the Glide transformations**
+- [ ] **Implement a shared element transition when user clicks into the details of a movie**
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='./assets/Requirement.gif' title='Walkthrough1' width='' alt='Video Walkthrough' />
-<img src='./assets/Requirement2.gif' title='Walkthrough2' width='' alt='Video Walkthrough' />
+<img src='app/src/main/res/assets/requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> 
 
 GIF created with ...
 - GIF created with [CloudConvert](https://cloudconvert.com/)
 
 ## Notes
 
-I had some issues with implementing the JSON
+I had some trouble with the implementation of the multiple screens and it takes me from one to the other
+but after some review of the previous lab I was able to implement it.
 
 ## License
 
