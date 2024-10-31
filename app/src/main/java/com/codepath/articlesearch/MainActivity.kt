@@ -70,9 +70,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         swipeContainer.setColorSchemeResources(
-            android.R.color.holo_blue_bright,
             android.R.color.holo_green_light,
             android.R.color.holo_orange_light,
+            android.R.color.holo_blue_bright,
             android.R.color.holo_red_light
         )
 
@@ -105,24 +105,20 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
         fetchArticles()
 
         networkReceiver = NetworkReceiver()
         val intentFilter = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
         registerReceiver(networkReceiver, intentFilter)
     }
-
     override fun onDestroy() {
         super.onDestroy()
         unregisterReceiver(networkReceiver)
     }
-
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.action_settings -> {
@@ -133,7 +129,6 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
-
     fun fetchArticles(query: String = "") {
         val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this)
         val shouldCache = sharedPreferences.getBoolean("cache_data", true)
@@ -143,7 +138,6 @@ class MainActivity : AppCompatActivity() {
         } else {
             "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=$query&api-key=${SEARCH_API_KEY}"
         }
-
         val client = AsyncHttpClient()
         client.get(url, object : JsonHttpResponseHandler() {
             override fun onFailure(
@@ -151,6 +145,7 @@ class MainActivity : AppCompatActivity() {
                 headers: Headers?,
                 response: String?,
                 throwable: Throwable?
+
             ) {
                 Log.e(TAG, "Failed to fetch articles: $statusCode")
                 swipeContainer.isRefreshing = false
@@ -188,6 +183,7 @@ class MainActivity : AppCompatActivity() {
                     swipeContainer.isRefreshing = false
                 }
             }
-        })
+        }
+        )
     }
 }

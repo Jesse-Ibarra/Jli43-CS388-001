@@ -12,7 +12,6 @@ class SettingsActivity : AppCompatActivity() {
             .replace(android.R.id.content, SettingsFragment())
             .commit()
     }
-
     class SettingsFragment : PreferenceFragmentCompat() {
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
             setPreferencesFromResource(R.xml.preferences, rootKey)
