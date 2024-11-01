@@ -14,29 +14,29 @@ Time spent: **4** hours spent in total <!-- Replace 'X' with the number of hours
 
 The following **required** functionality is completed:
 
-- [ ] (2 pts) **Most recently fetched data is stored locally in a database**
+- [X] (2 pts) **Most recently fetched data is stored locally in a database**
     - The app should cache the latest articles fetched from the NYT API in a local SQLite database using Room.
     - If the user has fetched data recently, those articles should be available offline.
     - Ensure old cached data is properly replaced with new data upon successful network fetches.
     - <img src='Assets/Requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-- [ ] (2 pts) **If user turns on airplane mode and closes and reopens app, old data from the database should be loaded**
+- [X] (2 pts) **If user turns on airplane mode and closes and reopens app, old data from the database should be loaded**
     - <img src='Assets/Requirement_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Stretch Features
 
 The following **stretch** functionality is implemented:
 
-- [ ] (2 pts) **Add Swipe To Refresh to force a new network call to get new data**
+- [X] (2 pts) **Add Swipe To Refresh to force a new network call to get new data**
     - <img src='Assets/Requirement_3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-- [ ] (2 pts) **Add setting toggle for user to create preference for caching data or not (Using Shared Preferences)**
+- [X] (2 pts) **Add setting toggle for user to create preference for caching data or not (Using Shared Preferences)**
     - <img src='Assets/Requirement_4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-- [ ] (+3 pts) **Implement a Search UI to filter current RecyclerView entries or fetch data from the search API with query**
+- [X] (+3 pts) **Implement a Search UI to filter current RecyclerView entries or fetch data from the search API with query**
     - <img src='Assets/Requirement_5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-- [ ] (2 pts) **Listen to network connectivity changes and create a UI to let people know they are offline and automatically reload new data if connectivity returns**
+- [X] (2 pts) **Listen to network connectivity changes and create a UI to let people know they are offline and automatically reload new data if connectivity returns**
     - <img src='Assets/Requirement_6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Resources
