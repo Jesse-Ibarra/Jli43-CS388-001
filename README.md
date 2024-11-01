@@ -18,29 +18,30 @@ The following **required** functionality is completed:
     - The app should cache the latest articles fetched from the NYT API in a local SQLite database using Room.
     - If the user has fetched data recently, those articles should be available offline.
     - Ensure old cached data is properly replaced with new data upon successful network fetches.
-    - 
+    - <img src='Assets/Requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 - [ ] (2 pts) **If user turns on airplane mode and closes and reopens app, old data from the database should be loaded**
-    - <img src='Assets/Requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+    - <img src='Assets/Requirement_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ### Stretch Features
 
 The following **stretch** functionality is implemented:
 
 - [ ] (2 pts) **Add Swipe To Refresh to force a new network call to get new data**
-    - ![GIF showing Swipe to Refresh](http://i.imgur.com/link/to/your/gif/file.gif)
+    - <img src='Assets/Requirement_3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 - [ ] (2 pts) **Add setting toggle for user to create preference for caching data or not (Using Shared Preferences)**
-    - ![GIF showing Shared Preferences for caching](http://i.imgur.com/link/to/your/gif/file.gif)
+    - <img src='Assets/Requirement_4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 - [ ] (+3 pts) **Implement a Search UI to filter current RecyclerView entries or fetch data from the search API with query**
-    - ![GIF showing Search UI functionality](http://i.imgur.com/link/to/your/gif/file.gif)
+    - <img src='Assets/Requirement_5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 - [ ] (2 pts) **Listen to network connectivity changes and create a UI to let people know they are offline and automatically reload new data if connectivity returns**
-    - ![GIF showing network connectivity detection](http://i.imgur.com/link/to/your/gif/file.gif)
+    - <img src='Assets/Requirement_6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Resources
 
+- GIF created with [CloudConvert](https://cloudconvert.com/)
 - [Data storage with Room](https://developer.android.com/training/data-storage/room)
 - [Swipe To Refresh](https://developer.android.com/training/swipe/add-swipe-interface)
 - [Save key-value data with Shared Preferences](https://developer.android.com/training/data-storage/shared-preferences)
