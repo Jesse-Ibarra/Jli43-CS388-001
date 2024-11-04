@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.codepath.bitlife.data.WaterIntakeDao
+import com.codepath.bitlife.WaterIntakeDao
 import com.codepath.bitlife.data.WaterIntakeEntity
 
 
