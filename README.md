@@ -1,57 +1,47 @@
-# Lab 5: ArticleSearch Pt 2
-
-Course Link: [CodePath Android Course](https://courses.codepath.org/courses/and102/unit/5#!labs)
+# Android Project 5 - *Bitlife*
 
 Submitted by: **Jesse Ibarra**
 
-**NYT Article Search Pt 2** is an app designed to maintain functionality while offline by caching the latest data fetched from the NYT API, ensuring a smooth user experience even without network connectivity.
+**Bitlife** is a health metrics app that allows users to track the amount of water they drink
 
-Time spent: **4** hours spent in total <!-- Replace 'X' with the number of hours you spent on this project -->
+Time spent: **4** hours spent in total
 
-## Application Features
-
-### Required Features
+## Required Features
 
 The following **required** functionality is completed:
 
-- [ ] (2 pts) **Most recently fetched data is stored locally in a database**
-    - The app should cache the latest articles fetched from the NYT API in a local SQLite database using Room.
-    - If the user has fetched data recently, those articles should be available offline.
-    - Ensure old cached data is properly replaced with new data upon successful network fetches.
-    - <img src='Assets/Requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+- [X] **At least one health metric is tracked (based on user input)**
+  - Chosen metric(s): water intake (in milliliters)
+- [X] **There is a "create entry" UI that prompts users to make their daily entry**
+- [X] **New entries are saved in a database and then updated in the RecyclerView**
+- [X] **On application restart, previously entered entries are preserved (i.e., are *persistent*)**
 
-- [ ] (2 pts) **If user turns on airplane mode and closes and reopens app, old data from the database should be loaded**
-    - <img src='Assets/Requirement_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+The following **optional** features are implemented:
 
-### Stretch Features
+- [ ] **Create a UI for tracking averages and trends in metrics**
+- [ ] **Improve and customize the user interface through styling and coloring**
+- [X] **Implement orientation responsivity**
+- [ ] **Add a daily photo feature**
 
-The following **stretch** functionality is implemented:
+The following **additional** features are implemented:
 
-- [ ] (2 pts) **Add Swipe To Refresh to force a new network call to get new data**
-    - <img src='Assets/Requirement_3.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+- [X] A button to clear all previous entries
 
-- [ ] (2 pts) **Add setting toggle for user to create preference for caching data or not (Using Shared Preferences)**
-    - <img src='Assets/Requirement_4.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+## Video Walkthrough
 
-- [ ] (+3 pts) **Implement a Search UI to filter current RecyclerView entries or fetch data from the search API with query**
-    - <img src='Assets/Requirement_5.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+Here's a walkthrough of implemented user stories:
 
-- [ ] (2 pts) **Listen to network connectivity changes and create a UI to let people know they are offline and automatically reload new data if connectivity returns**
-    - <img src='Assets/Requirement_6.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-## Resources
-
+- <img src='Assets/Requirement_1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+- <img src='Assets/Requirement2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+  
 - GIF created with [CloudConvert](https://cloudconvert.com/)
-- [Data storage with Room](https://developer.android.com/training/data-storage/room)
-- [Swipe To Refresh](https://developer.android.com/training/swipe/add-swipe-interface)
-- [Save key-value data with Shared Preferences](https://developer.android.com/training/data-storage/shared-preferences)
-- [Android Search View](https://developer.android.com/reference/android/widget/SearchView)
-- [Monitor connectivity status and connection metering](https://developer.android.com/training/monitoring-device-state/connectivity-status-type)
-- [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html)
+
+## Notes
+
+Describe any challenges encountered while building the app.
 
 ## License
 
-```plaintext
     Copyright [2024] [Jesse Ibarra]
 
     Licensed under the Apache License, Version 2.0 (the "License");
