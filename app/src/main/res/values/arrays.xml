@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="units">
+        <item>Milliliters (ml)</item>
+        <item>Ounces (oz)</item>
+    </string-array>
+    <string-array name="units_values">
+        <item>ml</item>
+        <item>oz</item>
+    </string-array>
+</resources>

@@ -1,0 +1,21 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notifications">
+        <SwitchPreferenceCompat
+            android:key="notifications"
+            android:title="Enable Notifications"
+            android:summary="Receive daily reminders to log your water intake"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Units">
+        <ListPreference
+            android:key="units"
+            android:title="Units of Measurement"
+            android:summary="Choose the unit of measurement for water intake"
+            android:defaultValue="ml"
+            android:entries="@array/units"
+            android:entryValues="@array/units_values" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-mergeDebugResources-56:\\layout\\activity_detail.xml",
+        "source": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-main-59:\\layout\\activity_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-mergeDebugResources-56:\\layout\\fragment_main.xml",
+        "source": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-main-59:\\layout\\fragment_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-mergeDebugResources-56:\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-main-59:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-mergeDebugResources-56:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-main-59:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-mergeDebugResources-56:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-main-59:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-mergeDebugResources-56:\\layout\\item_article.xml",
+        "source": "C:\\Users\\jesse\\.gradle\\daemon\\8.0\\com.codepath.bitlife.app-main-59:\\layout\\item_article.xml"
+    },
+    {
+        "merged": "com.codepath.bitlife.app-mergeDebugResources-56:/layout/item_article.xml",
+        "source": "com.codepath.bitlife.app-main-59:/layout/item_article.xml"
+    }
+]
