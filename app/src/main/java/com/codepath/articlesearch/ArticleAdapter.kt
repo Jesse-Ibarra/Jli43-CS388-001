@@ -14,11 +14,16 @@ import com.codepath.articlesearch.DisplayArticle
 const val ARTICLE_EXTRA = "ARTICLE_EXTRA"
 private const val TAG = "ArticleAdapter"
 
-class ArticleAdapter(private val context: Context, private val articles: List<DisplayArticle>) :
-    RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
+class ArticleAdapter(
+    private val context: Context,
+    private val articles: List<DisplayArticle>,
+    private val isHomeScreen: Boolean = false // Add a flag to differentiate layouts
+) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_article, parent, false)
+        // Use different layouts based on the isHomeScreen flag
+        val layoutId = if (isHomeScreen) R.layout.item_home else R.layout.item_article
+        val view = LayoutInflater.from(context).inflate(layoutId, parent, false)
         return ViewHolder(view)
     }
 
@@ -29,24 +34,29 @@ class ArticleAdapter(private val context: Context, private val articles: List<Di
 
     override fun getItemCount() = articles.size
 
-    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
-        View.OnClickListener {
-
-        private val mediaImageView = itemView.findViewById<ImageView>(R.id.mediaImage)
-        private val titleTextView = itemView.findViewById<TextView>(R.id.mediaTitle)
-        private val abstractTextView = itemView.findViewById<TextView>(R.id.mediaAbstract)
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+        private val mediaImageView: ImageView? = itemView.findViewById(R.id.mediaImage)
+        private val titleTextView: TextView? = itemView.findViewById(R.id.articleTitle)
+        private val abstractTextView: TextView? = itemView.findViewById(R.id.articleAbstract)
+        private val bylineTextView: TextView? = itemView.findViewById(R.id.articleByline)
 
         init {
             itemView.setOnClickListener(this)
         }
 
         fun bind(article: DisplayArticle) {
-            titleTextView.text = article.headline
-            abstractTextView.text = article.abstract
+            titleTextView?.text = article.headline
+            abstractTextView?.text = article.abstract
+            bylineTextView?.text = article.byline
 
-            Glide.with(context)
-                .load(article.mediaImageUrl)
-                .into(mediaImageView)
+            // Load the image with placeholder and error handling
+            mediaImageView?.let {
+                Glide.with(context)
+                    .load(article.mediaImageUrl)
+                    .placeholder(R.drawable.ic_launcher_background)
+                    .error(R.drawable.ic_launcher_background)
+                    .into(it)
+            }
         }
 
         override fun onClick(v: View?) {
@@ -57,3 +67,5 @@ class ArticleAdapter(private val context: Context, private val articles: List<Di
         }
     }
 }
+
+

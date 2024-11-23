@@ -16,9 +16,14 @@ class NetworkReceiver : BroadcastReceiver() {
 
         if (isConnected) {
             Toast.makeText(context, "Connected to the internet", Toast.LENGTH_SHORT).show()
-            (context as MainActivity).fetchArticles()
+            if (context is NetworkStatusListener) {
+                context.onNetworkConnected()
+            }
         } else {
             Toast.makeText(context, "No internet connection", Toast.LENGTH_SHORT).show()
+            if (context is NetworkStatusListener) {
+                context.onNetworkDisconnected()
+            }
         }
     }
 }

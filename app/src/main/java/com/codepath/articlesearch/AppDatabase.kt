@@ -5,9 +5,10 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [ArticleEntity::class], version = 1)
+@Database(entities = [ArticleEntity::class, BookEntity::class], version = 2) // Updated to include BookEntity and incremented version
 abstract class AppDatabase : RoomDatabase() {
     abstract fun articleDao(): ArticleDao
+    abstract fun bookDao(): BookDao // New DAO for book data
 
     companion object {
         @Volatile
@@ -21,7 +22,9 @@ abstract class AppDatabase : RoomDatabase() {
         private fun buildDatabase(context: Context) =
             Room.databaseBuilder(
                 context.applicationContext,
-                AppDatabase::class.java, "Articles-db"
-            ).build()
+                AppDatabase::class.java, "ArticlesBooks-db" // Updated database name to reflect both articles and books
+            )
+                .fallbackToDestructiveMigration() // This resets the database during migration (use carefully)
+                .build()
     }
 }
